@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogos Digitais - 1º Ano</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #dbe7ec, #0b9dce, #1895ca);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #007d99;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>ASTRONOMIA 🚀 🪐 </h1>
+
+        <p>1º Ano do Ensino Médio</p>
+
+        <p>
+            Somos poeira de estrelas explorando a imensidão do infinito.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tipos de Jogos</a>
+
+        <a href="#inovacao">Como são criados</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="images (1).jpeg"
+                alt="Jogos digitais e controles"
+            >
+
+            <div class="inicio-texto">
+
+                <h2> Bem-vindos a astronomia </h2>
+
+                <p>
+                    Tudo sobre astronomia </strong>.
+                </p>
+
+                <br>
+
+                <p>
+                    A astronomia é a ciência que estuda o Universo, incluindo planetas, estrelas, galáxias, luas, cometas, asteroides e buracos negros. Por meio de telescópios, satélites e sondas espaciais, os cientistas investigam a origem, a composição e a evolução dos corpos celestes, buscando compreender os mistérios do cosmos.
+
+O Universo tem aproximadamente 13,8 bilhões de anos e continua em expansão. Nele existem bilhões de galáxias, cada uma contendo milhões ou até bilhões de estrelas. A nossa galáxia, a Via Láctea, abriga o Sistema Solar, onde está localizada a Terra, o planeta que reúne as condições conhecidas para a existência da vida.
+
+A astronomia também estuda fenômenos fascinantes, como eclipses, chuvas de meteoros, supernovas e buracos negros. Essas descobertas ajudam os cientistas a entender melhor as leis da natureza e a história do Universo.
+
+Além de ampliar o conhecimento científico, a astronomia contribui para o desenvolvimento de tecnologias e desperta a curiosidade sobre o que existe além do nosso planeta. Mesmo com os avanços da ciência, muitos mistérios ainda permanecem sem resposta, tornando a exploração espacial uma jornada contínua de descobertas.
+
+
+                </p>
+
+                <br>
+
+                <p>
+                
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>Sistema solar</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="images (6).jpeg"
+                    alt="Jogos de ação e aventura"
+                >
+
+                <h3>O que é sistema solar </h3>
+
+                <p>
+                    O Sistema Solar é formado pelo Sol e por todos os corpos celestes que estão sob a influência de sua gravidade. Ele se formou há aproximadamente 4,6 bilhões de anos, a partir de uma grande nuvem de gás e poeira cósmica. Nele existem oito planetas, luas, asteroides, cometas e planetas anões, que juntos formam um sistema fascinante no espaço.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (7).jpeg"
+                    alt="Jogos retrô e arcade"
+                >
+
+                <h3>O sol</h3>
+
+                <p>
+                    O Sol é a estrela central do Sistema Solar e a principal fonte de luz e calor para a Terra. Sua gravidade mantém os planetas e muitos outros corpos celestes em suas órbitas. Ele é composto principalmente por hidrogênio e hélio e produz energia por meio da fusão nuclear em seu interior. Sem a energia solar, a vida como conhecemos na Terra não seria possível.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (8).jpeg"
+                    alt="Jogos de estratégia"
+                >
+
+                <h3>Oito planetas </h3>
+
+                <p>
+                    Os oito planetas do Sistema Solar são Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. Os quatro primeiros são planetas rochosos, com superfícies sólidas, enquanto Júpiter e Saturno são gigantes gasosos e Urano e Netuno são gigantes de gelo. Cada planeta possui características próprias, como tamanho, temperatura, atmosfera e número de luas, tornando o estudo deles essencial para compreender a diversidade dos mundos.
+
+
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (2).jpeg"
+                    alt="Jogos digitais e videogame"
+                >
+
+                <h3>Estrelas e Galáxias </h3>
+
+                <p>
+                    As estrelas são enormes esferas de gás que produzem luz e calor. As galáxias são grandes conjuntos de estrelas, gases, poeira e matéria escura.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>4 Objetivos da astronomia</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>compreender o universo</h3>
+
+                <p>
+                    Estudar sua origem, evolução e estrutura
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Estudar os astros</h3>
+
+                <p>
+                    conhecer os planetas, estrelas, galáxias e outros corpos celestes
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Explorar o espaço </h3>
+
+                <p>
+                    investigar outros planetas e descobrir novos fenômenos cósmicos 
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Ampliar o conhecimento científico</h3>
+
+                <p>
+                    desenvolver tecnologias e compreender melhor o lugar da Terra no Universo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+        <div class="reflexao">
+
+            <h2>Conclusão sobre isso</h2>
+
+            <p>A astronomia é uma ciência muito importante, pois nos ajuda a compreender o Universo e os mistérios que existem além da Terra. Por meio de estudos e descobertas, podemos conhecer melhor os planetas, as estrelas e as galáxias. Assim, a astronomia amplia nosso conhecimento e desperta a curiosidade sobre o espaço e o nosso lugar nele.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>Obrigado pela visita </h2>
+
+            <p>Esperamos que você tenha aprendido mais sobre o fascinante mundo da astronomia.
+
+                O Universo é cheio de mistérios e descobertas esperando para serem explorados. Continue aprendendo, observando o céu e descobrindo as maravilhas do espaço.
+                
+                O céu não é o limite, é apenas o começo 🚀
+                
+                Continue explorando o Universo conosco!
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            ASTRONOMIA – 1º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Explore o Universo
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
